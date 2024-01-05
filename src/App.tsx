@@ -1,12 +1,13 @@
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import { ChangeEvent, ClickEvent, useState } from 'react'
+import { ChangeEvent, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { TextField } from '@mui/material';
+import { Box, TextField } from '@mui/material';
 import './App.css'
 import axios from 'axios';
+import Header from './components/Header';
 
 function App() {
   const theme = createTheme();
@@ -41,6 +42,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Box sx={{width:1}}>
+          <Header />
+        </Box>
         <div>
           <a href="https://vitejs.dev" target="_blank">
             <img src={viteLogo} className="logo" alt="Vite logo" />
