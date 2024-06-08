@@ -45,7 +45,7 @@ https://vitejs.dev/guide/env-and-mode.html
 
 ## Json server
 https://www.npmjs.com/package/json-server?activeTab=readme#getting-started  
-
+https://github.com/typicode/json-server/tree/v0  
 Json server runs by default on port 300  
 It is run using script:  
 ```
