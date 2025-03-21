@@ -12,4 +12,7 @@ export default defineConfig({
  
  // The output directory for your css system
  outdir: "styled-system",
+
+ //Enable JSX syntax
+ jsxFramework: 'react'
 })
