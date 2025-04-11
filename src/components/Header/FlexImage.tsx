@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '../../../styled-system/css/css';
 
-export const InlineFlexStyle = css({display:"inline-flex"});
+export const InlineFlexStyle = css({display:"inline"});
 
 interface FlexImageProps {
     src: string;

@@ -14,5 +14,11 @@ export default defineConfig({
  outdir: "styled-system",
 
  //Enable JSX syntax
- jsxFramework: 'react'
+ jsxFramework: 'react',
+
+ //Change generated typescript definitions to be more strict for property having a token or utility.
+ strictTokens: true,
+
+ //Change generated typescript definitions to be more strict for built-in CSS properties to only allow valid CSS values.
+ strictPropertyValues : true
 })

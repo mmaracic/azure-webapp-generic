@@ -20,7 +20,7 @@ const StyledMenuList = styled(NavigationMenu.List)
 
 function Menu() {
     return (
-        <NavigationMenu.Root className={InlineFlexStyle}>
+        <NavigationMenu.Root className={css({display: "inline-flex"})}>
             <StyledMenuList listStyle="none" display="inline-flex">
                 <StyledMenuItem itemText="Home" itemHref="/" />
                 <StyledMenuItem itemText="About" itemHref="/about" />
