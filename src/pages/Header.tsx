@@ -10,12 +10,13 @@ import {FlexImage, InlineFlexStyle } from "../components/header/FlexImage";
 function Header() {
 
     const appTitle = import.meta.env.VITE_APP_TITLE
+    const environment = import.meta.env.MODE
 
     return (
-        <Box className={css({backgroundColor: "blue", color: "white"})}>
+        <Box className={css({backgroundColor: "var(--accent-9)", color: "var(--gray-12)"})}>
             <FlexImage src={reactLogo} alt="React Logo" />
             <FlexImage src={viteLogo} alt="Vite Logo" />
-            <Heading data-testid="header" className={InlineFlexStyle}>{appTitle}</Heading>
+            <Heading data-testid="header" className={InlineFlexStyle}>{appTitle} Environment {environment}</Heading>
             <Menu />
             <Login />
         </Box>

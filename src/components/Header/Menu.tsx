@@ -10,7 +10,7 @@ interface MenuItemProps {
 
 //React component that uses prebuild style (can be outside defined constant)
 const StyledMenuItem = ({ itemText, itemHref }: MenuItemProps) => (
-    <NavigationMenu.Item className={css({margin: "10px"})}>
+    <NavigationMenu.Item className={css({margin: "var(--space-2)"})}>
         <NavigationMenu.Link href={itemHref}>{itemText}</NavigationMenu.Link>
     </NavigationMenu.Item>
 )
